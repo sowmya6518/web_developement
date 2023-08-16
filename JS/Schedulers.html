@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>SetTimeout</title>
+      <script>
+            alert('This is a Secheduler Alert');
+            function myFunction() {
+              document.getElementById("h2").innerHTML = "You clicked on me...!!!, Before 3Secs";
+            
+            }
+            
+            
+
+            let myVar = setInterval(myTimer ,1000);
+function myTimer() {
+  const d = new Date();
+  document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+}
+      </script>
+</head>
+<body>
+      
+      <h2 id="h2">Sechedulers</h2>
+
+<button onclick="setTimeout(myFunction, 3000)">Try Me..!!</button>
+
+<button onclick="clearTimeout(myFunction)">Stop it</button><hr>
+
+<h2 id="demo">I am your clock</h2>
+<button onclick="setInterval(myTimer, 1000);">Titan Watch</button>
+
+<button onclick="clearInterval(myVar)">Stop the Watch</button>
+
+
+</body>
+</html>
