@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2 id="h2">The length Property is </h2>
+
+ 
+<h3 id="demo">The toString Property is </h3>
+<h4 id="h4">The Join Property is </h4>
+
+<h5 id="h5">The pop Property is </h5>
+<h1 id="h1">The push Property is </h1>
+
+
+
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+const Veggies = ["Brinjal", "potato", "tomato", "mint"];
+const shakes = ["milkshake", "thickshake", "creamshake", "hotchocolate"];
+const curries = ["chicken", "mutton", "prawns", "fish"];
+const cars= ["volvo", "BMW", "Thar","Jeep"]
+let size = fruits.length;
+document.getElementById("h2").innerHTML = document.getElementById("h2").innerHTML + size;
+document.getElementById("demo").innerHTML = document.getElementById("demo").innerHTML + Veggies.toString();
+document.getElementById("h4").innerHTML = document.getElementById("h4").innerHTML+shakes.join(" * ");
+document.getElementById("demo").innerHTML = curries;
+curries.pop();
+document.getElementById("h5").innerHTML = document.getElementById("h5").innerHTML+curries;
+cars.push("RR");
+document.getElementById("h1").innerHTML = document.getElementById("h1").innerHTML+cars;
+</script>
+
+</script>
+
+</body>
+</html>
